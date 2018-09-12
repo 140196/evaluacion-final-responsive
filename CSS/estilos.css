@@ -1,24 +1,28 @@
-﻿body{
+﻿*{
+font-family: 'Dancing Script', cursive;
+src: url("https://fonts.google….com/css?family=Dancing+Script");
+}
+
+
+body{
 	background-color: #02010a;
 }
 
 header{
-	text-align: left;
+	color: white;
 	background-color: #5b7989;
 	border-radius: 10px 10px 0 0;
-}
-
-h1{
-	color: white;
 	text-shadow: 2px 2px #02010a;
 }
 
-nav{
+#nav, a{
 	text-align: right;
+	color: white;
 }
 
-a{
-	text-decoration: none;
+#nav .inicio{
+	text-decoration: none; 
+	color: white;
 }
 
 .conteiner1{
@@ -39,23 +43,65 @@ figure{
 }
 
 .conteiner2{
-		display: flex;
-	flex-direction: column;
+	    display:  flex;
+	    flex-direction: row;
+	    flex-justify: center;
+	    background-color: #d5c75f;
+	    border: 1px solid white;
 }
 
 .conteiner2 figure + img{
 	width: 50%;
 }
 
-@media (min-width: 700px){
+#imagen2 img{
+	width: 70%;
+	text-align: center;
+	border: 2px solid black;
+	box-shadow: 2px 2px #82c3a6;
+}
+
+#imagen3 img{
+	width: 70%;
+	text-align: center;
+	border: 2px solid black;
+	box-shadow: 2px 2px #82c3a6;
+}
+
+@media (max-width: 700px){
+	body{
+		text-align: center;
+	}
+	#nav, a{
+	text-align: center;
+	}
 	.conteiner2 {
-	    display:  flex;
-	    flex-direction: row;
-	    flex-justify: center;
-	    background-color: #d5c75f;
-	    border: 1px solid white;
+		display: flex;
+		flex-direction: column;
+		flex-justify: center;
+		justify-content: center;
+	}
+    #imagen3{
+	    width: 70%;
+    }
+    #imagen2{
+	    width: 70%;
+    }
+	.container3{
+	display: flex;
+	flex-direction: column;
+	flex-justify: center;
+	justify-content: center;
+	border-radius: 0 0 10px 10px;
+	background-color: #c6d5c5;
+	}
+	.container3 p{
+	text-align: center;
+	justify-content: center;
 	}
 }
+
+
 
 #imagen2 :hover{
 	webkit-transform: rotate(10deg);
@@ -63,12 +109,39 @@ figure{
 }
 
 
+#imagen3 :hover{
+	webkit-transform: translate(-5px, 10px);
+	transform: translate(20px, -5px);
+}
 
+.container3 p{
+	color: black:
+	text-align: center;
+}
 
+.container3{
+	display: flex;
+	flex-direction: rows;
+	border-radius: 0 0 10px 10px;
+	background-color: #c6d5c5;
+}
 
+#contacto{
+	display: flex;
+	flex-direction: column;
+}
 
+#contacto, #termino, #redes, #derechos{
+	width: 25%;
+	margin: 2px;
+	text-align: center;
+	boerder: white;
+}
 
-
+.face, .gmail, .instagram{
+	width: 10%;
+	border-radius: 10px;
+}
 
 
 
